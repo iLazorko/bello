@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Bello</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo">
+          <svg width="95" height="35">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./img/icons.svg#icon-menu-close"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./img/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <!-- MENU -->
+
+        <div class="header__menu" id="menu-container" data-menu>
+          <nav class="site-nav">
+            <ul class="site-nav__list list">
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link link"
+                  >Life insurance</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link link">Why Bello</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link link">Help</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="registration">
+            <a href="" class="registration__link link">Log in</a>
+            <a href="" class="registration__btn link">Get my price</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <picture>
+            <source
+              srcset="
+                ./img/hero/hero-mobile.jpg    1x,
+                ./img/hero/hero-mobile@2x.jpg 2x
+              "
+              media="(min-width:320px)"
+            />
+            <img src="./img/hero/hero-mobile.jpg" alt="family" />
+          </picture>
+
+          <h1 class="hero__title">MEET BELLO</h1>
+          <p class="hero__toptext">A new kind of life insurance</p>
+          <p class="hero__bottomtext">
+            Secure your family's financial future, in as little as 10
+            minutes.
+          </p>
+          <a href="" class="hero__btn btn link">
+            Get my price
+            <span class="icon-wrap">
+              <svg width="29" height="10">
+                <use
+                  href="./img/icons.svg#icon-Shape"
+                  class="main-btn-icon"
+                ></use></svg
+            ></span>
+          </a>
+        </div>
+      </section>
+      <section class="indicators">
+        <div class="container">
+          <picture>
+            <source
+              srcset="
+                ./img/indicators/indicators-mobile.jpg    1x,
+                ./img/indicators/indicators-mobile@2x.jpg 2x
+              "
+              media="(min-width:320px)"
+            />
+            <img
+              src="./img/indicators/indicators-mobile.jpg"
+              alt="indicators"
+            />
+          </picture>
+          <h1 class="indicators__title">Secure your future</h1>
+          <p class="indicators__toptext">
+            It’s more affordable than you think
+          </p>
+          <p class="indicators__bottomtext">
+            Life insurance shouldn’t be confusing or expensive.
+            Bello’s term life insurance makes protecting your loved
+            ones easy and affordable.
+          </p>
+          <a href="" class="indicators__btn btn-second link">
+            Get my price
+            <span class="icon-wrap">
+              <svg width="29" height="10">
+                <use
+                  href="./img/icons.svg#icon-Shape"
+                  class="second-btn-icon"
+                ></use></svg
+            ></span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

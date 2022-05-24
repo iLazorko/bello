@@ -1,0 +1,40 @@
+.indicators {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f9f5f2;
+}
+
+.indicators__title {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.indicators__toptext {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.06;
+  text-transform: capitalize;
+  color: var(--second-title-color);
+}
+
+.indicators__bottomtext {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.indicators__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
